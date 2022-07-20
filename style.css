@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 /* main web layout style  */
@@ -49,16 +50,18 @@ top banner styles
     font-weight: 400;
     padding: 16px 0px;
     width: 186px;
-    background-color: goldenrod;
-    border-radius: 5px;
+    background-color: #4681f4;
+    border-radius: 10px;
     color: white;
-
-
 }
 
 .watch-btn a {
     text-decoration: none;
     color: white;
+}
+
+.fa-solid {
+    padding-left: 5px;
 }
 
 .top-banner-img img {
@@ -78,7 +81,6 @@ article styles
     width: 312px;
     height: 312px;
     border-radius: 10px;
-
 }
 
 .nav-option {
@@ -97,6 +99,20 @@ article styles
     width: 252px;
     padding: 20px 0;
     font-size: 20px;
+    font-weight: 600px;
+}
+
+.aside-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-1 {
+    background-color: #4681f4;
+}
+
+.nav-1 a {
+    color: white;
 }
 
 /* blogs style  */
@@ -112,7 +128,7 @@ article styles
 
 .blog-info {
     width: 270px;
-    height: 100%;
+    height: 167px;
     border: 1px solid lightgray;
     border-radius: 0 0 10px 10px;
     padding: 20px;
@@ -122,7 +138,7 @@ article styles
     width: 100px;
     padding: 6.5px 0;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
@@ -140,13 +156,60 @@ article styles
 }
 
 .info-1 {
+    font-size: 18px;
     color: rgba(22, 22, 22, 0.7);
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .icon {
-    width: 19px;
-    height: 19px;
+    width: 16px;
+    height: 16px;
+}
+
+/* aside and articles flexed */
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* article grid  */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* footer style  */
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    margin-top: 104px;
+}
+
+.footer h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 104px;
+}
+
+.footer hr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px 140px 0px 140px;
+}
+
+.footer-option {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 351px 130px 351px;
+}
+
+.footer-nav {
+    color: #B9B9B9;
+    font-size: 16px;
+    font-weight: 500;
 }
