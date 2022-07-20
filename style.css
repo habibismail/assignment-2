@@ -1,0 +1,88 @@
+/* font family */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* main web layout style  */
+main {
+    padding: 0 100px;
+}
+
+/* --------
+top banner styles 
+-----------*/
+.top-banner {
+    display: flex;
+    width: 1321px;
+    height: 646px;
+    background-color: #161616;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+
+.top-title-info {
+    width: 531px;
+    height: 100%;
+    margin: 53px 24px 111px 106px;
+}
+
+.top-title h1 {
+    padding-top: 0;
+    color: white;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.top-title p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.watch-btn {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 16px 0px;
+    width: 186px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    color: white;
+
+
+}
+
+.watch-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-banner-img img {
+    width: 350px;
+    height: 613px;
+    margin-top: 33px;
+    margin-left: 100px;
+}
+
+/* ----------
+article styles
+--------------- */
+.aside {
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.aside-nav {
+    width: 252px;
+    height: 64px;
+    background-color: white;
+
+}
