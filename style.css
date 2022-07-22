@@ -9,7 +9,7 @@ body {
 /* main web layout style  */
 
 main {
-    padding: 0 7%;
+    margin: 0 7%;
 }
 
 /* --------
@@ -81,15 +81,13 @@ article styles
     width: 312px;
     height: 312px;
     border-radius: 10px;
+    margin-right: 10.53px;
 }
 
 .nav-option {
     height: 252px;
     width: 252px;
     padding: 30px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
 }
 
 .aside-nav {
@@ -98,6 +96,7 @@ article styles
     border-radius: 10px;
     width: 252px;
     padding: 20px 0;
+    margin-top: 20px;
     font-size: 20px;
     font-weight: 600px;
 }
@@ -117,10 +116,12 @@ article styles
 
 /* blogs style  */
 .blog-img img {
-    width: 312px;
+    width: 100%;
     height: 175px;
     border-radius: 10px 10px 0 0;
 }
+
+
 
 .blog-img {
     height: 175px;
@@ -145,12 +146,13 @@ article styles
 }
 
 .blog-info p {
+    width: 100%;
     font-size: 18px;
     font-weight: 600;
 }
 
 .info {
-    width: 143px;
+    width: 178px;
     display: flex;
 }
 
@@ -169,12 +171,14 @@ article styles
 
 /* aside and articles flexed */
 .articles {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 /* article grid  */
 .blogs {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -204,7 +208,7 @@ article styles
 .footer-option {
     display: flex;
     justify-content: space-evenly;
-    padding: 50px 351px 130px 351px;
+    padding: 50px 351px 100px 351px;
 }
 
 .footer-nav {
@@ -213,8 +217,16 @@ article styles
     font-weight: 500;
 }
 
+.icons {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
 
-
+.icons i {
+    padding: 20px;
+}
 
 /* ---------------------------------
           Mobile divice 
@@ -274,8 +286,18 @@ article styles
     }
 
     .blogs {
+        width: 100%;
         margin-top: 24px;
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .blog-img {
+        width: 100%;
+    }
+
+    .blog-info {
+        width: 312.33px;
     }
 
     .footer {
@@ -291,5 +313,63 @@ article styles
 
     .footer-nav {
         padding-top: 25px;
+    }
+}
+
+/*--------------------
+     Device Tablet
+---------------------- */
+@media screen and (min-width:669px) and (max-width:992px) {
+    .top-title p {
+        font-size: 16px;
+    }
+
+    .watch-btn {
+        font-size: 16px;
+    }
+
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .nav-option {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        display: flex;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .blog-info {
+        width: 298.6px;
+    }
+
+    .blog-img img {
+        width: 100%;
+    }
+
+    .last-article {
+        display: none;
+    }
+
+    .footer-option {
+        width: 100%;
+        padding: 40px 0 70px 0;
+    }
+
+    .footer-nav {
+        padding: 0 20px;
     }
 }
