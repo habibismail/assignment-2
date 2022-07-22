@@ -373,3 +373,31 @@ article styles
         padding: 0 20px;
     }
 }
+
+
+/* -----------------------------------------------
+              web-page 2 styles
+   ----------------------------------------------- */
+.articles-page-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blog-pg-2 {
+    padding: 53px 30px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.flags {
+    display: flex;
+    justify-content: center;
+}
+
+.vs {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+}
